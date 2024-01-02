@@ -1,6 +1,6 @@
 :root {
     --purple500: rgb(72, 72, 180);
-    --purple300: rgb(209, 153, 153);
+    --purple300: rgb(77, 251, 3);
     --purple600: rgb(44, 31, 31);
     --red600: red;
     --body: white;
@@ -23,19 +23,184 @@ body {
 }
 
 .container {
-    /* display: flex; */
-    /* width: 100%; */
-    max-width: 1200px;
-    background: black;
+    max-width: 100%;
+    /* background: var(--purple500); */
+    /* background: red; */
     margin: 0 auto;
 
 }
 
+/* .container .logo {
+    position: sticky;
+} */
+
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(16, 9, 9);
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(18, 8, 8);
+    font-weight: bold;
+    align-items: center;
 }
 
 ul {
+    display: flex;
     list-style: none;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px;
+    padding: 0px;
+}
+
+header {
+    position: sticky;
+    background: var(--purple300);
+    /* thw below 3 lines will make the navBar stiky at the top */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    gap: 20px;
+    display: flex;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid rgb(252, 31, 2);
+}
+
+.hero-section {
+    background: url('images/hero_image\ \(1\).png') no-repeat;
+    height: 100vh;
+    display: grid;
+    background-size: cover;
+    color: white;
+    place-items: center;
+    text-align: center;
+
+}
+
+.hero-section .container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    font-size: 96px;
+}
+
+.hero-section h3 {
+    font-size: 32px;
+
+}
+
+.music-section {
+    padding-top: 50px;
+    background: rgb(98, 98, 243);
+
+    /* background: var(--purple600); */
+}
+
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.btn1 {
+    padding: 10px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+    border-radius: 10px;
+    background: rgb(92, 218, 188);
+    color: rgb(8, 7, 7);
+    border: 1px solid black;
+    box-shadow: 3px 5px 5px black;
+}
+
+.btn1:hover {
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    background: rgb(6, 235, 6);
+    color: rgb(18, 14, 14);
+    border: 2px solid black;
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 3px 5px 5px black;
+}
+
+.ipad-img {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+.btn2 {
+    margin-top: 0;
+    background: black;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid greenyellow;
+
+}
+
+.btn2:hover {
+    box-shadow: 3px 5px 5px rgb(237, 187, 93);
+    transform: scale(1.09)
+}
+
+.about-music {
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 80px;
+    text-align: center;
+}
+
+.video-section {
+    background: url('images/video.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    display: grid;
+    color: white;
+    text-align: center;
+}
+
+.video-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 200px;
 }
