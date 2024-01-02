@@ -50,7 +50,7 @@ a {
 }
 
 ul {
-    display: flex;
+    /* display: flex; */
     list-style: none;
     align-items: center;
 }
@@ -203,4 +203,56 @@ nav ul li:hover {
     flex-direction: column;
     gap: 30px;
     margin-top: 200px;
+}
+
+.gift-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.gift-content p {
+    font-family: cursive;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.container p {
+    margin: 10px 40px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-upper .container {
+    /* margin: 0px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: rgb(205, 187, 187);
+    font-weight: 500;
+    padding: 50px 0px;
+
+}
+
+.footer-links {
+    margin-left: 150px;
+}
+
+.footer-lower {
+    background: grey;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
 }
