@@ -1,0 +1,41 @@
+:root {
+    --purple500: rgb(72, 72, 180);
+    --purple300: rgb(209, 153, 153);
+    --purple600: rgb(44, 31, 31);
+    --red600: red;
+    --body: white;
+    --max-width: 1200px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    line-height: 1.4;
+
+}
+
+.container {
+    /* display: flex; */
+    /* width: 100%; */
+    max-width: 1200px;
+    background: black;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
